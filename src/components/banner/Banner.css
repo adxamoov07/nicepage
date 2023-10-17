@@ -1,0 +1,56 @@
+.banner {
+    width: 100%;
+    height: 105vh;
+    padding: 0 11%;
+    display: flex;
+    align-items: end;
+    background-position: center;
+    background-image: url(https://images01.nicepage.com/0f/f3/0ff3a7aa2a5f1eb3e2adec00e816cc08.jpeg);
+}
+
+.design_item {
+    width: 600px;
+    height: 60%;
+    background-color: #1c1f22;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+
+}
+
+.design_item>h1 {
+    font-size: 70px;
+}
+
+.design_item>p {
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 800px) {
+    .banner {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .design_item {
+        width: 100%;
+        height: 70%;
+    }
+
+    .design_item>h1 {
+        font-size: 43px;
+    }
+    
+    .design_item>p {
+        line-height: 1.7;
+        font-size: 18px;
+    }
+}
