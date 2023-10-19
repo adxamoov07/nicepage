@@ -1,0 +1,37 @@
+.images {
+    width: 100%;
+    height: 50vh;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.images>img {
+    width: 25%;
+    height: 100%;
+}
+
+@media screen and (max-width: 950px) {
+    .images>img {
+        width: 50%;
+        height: 50;
+    }
+
+    .images {
+        margin-bottom: 400px;
+    }
+
+}
+
+@media screen and (max-width: 518px) {
+    .images>img {
+        width: 100%;
+    }
+
+    .images {
+        margin-bottom: 1000px;
+    }
+
+}

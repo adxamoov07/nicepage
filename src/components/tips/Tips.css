@@ -1,0 +1,60 @@
+.tips {
+    width: 100%;
+    height: 60vh;
+    background-color: #fff;
+    padding: 0 11%;
+    display: flex;
+    margin: 50px 0;
+
+}
+
+.tips_left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tips_left>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tips_left>div>h1 {
+    font-size: 50px;
+    color: orange;
+}
+
+.tips_right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tips_right>img {
+    width: 90%;
+    height: 90%;
+    box-shadow: 40px -40px 0 rgba(255, 166, 0, 0.574);
+}
+
+@media screen and (max-width: 715px) {
+    .tips {
+        height: auto;
+        flex-direction: column;
+    }
+    .tips_left{
+        width: 100%;
+    }
+    .tips_right{
+        width: 100%;
+        padding-top: 50px ;
+    }
+
+}
