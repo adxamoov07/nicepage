@@ -1,28 +1,19 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Footer from './components/Footer/Footer';
-import Banner from './components/banner/Banner';
-import Cards from './components/cards/Cards';
-import Efficent from './components/effisent/Efficent';
-import Galery from './components/galery/Galery';
-import Header from './components/header/Header';
-import Ideas from './components/ideas/Ideas';
-import Images from './components/images1/Images';
-import Text from './components/text/Text';
-import Tips from './components/tips/Tips';
+import Home from './home/Home';
+import Page from './components/page1/Page';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Banner />
-      <Text />
-      <Cards />
-      <Galery/>
-      <Efficent/>
-      <Images/>
-      <Tips/>
-      <Ideas/>
-      <Footer/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/page1' element={<Page/>}/>
+        <Route path='/page2' element={<Page/>}/>
+        <Route path='/page3' element={<Page/>}/>
+        <Route path='/page4' element={<Page/>}/>
+        <Route path='/page5' element={<Page/>}/>
+      </Routes>
     </div>
   );
 }

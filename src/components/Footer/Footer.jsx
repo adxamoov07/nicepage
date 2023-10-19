@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css'
+import {BsFacebook, BsTelegram, BsTwitter} from 'react-icons/bs'
 
 function Footer() {
   return (
@@ -8,11 +9,13 @@ function Footer() {
         <div className="footer_top_box">
           <h1>Office Design Gallery</h1>
           <div className="footer_top_box_icon">
+          <BsFacebook/>
+          <BsTelegram/>
+          <BsTwitter/>
 
           </div>
         </div>
         <div className="footer_top_box_line">
-
         </div>
         Office Design Gallery brings you our hand picked selection of the best office <br /> design pictures.footer text
       </div>

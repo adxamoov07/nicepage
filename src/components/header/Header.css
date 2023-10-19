@@ -62,3 +62,8 @@
     color: #fff;
     padding: 60px 0;
 }
+
+.bars_item_box>h3>a{
+    color: #fff;
+    text-decoration: none;
+}

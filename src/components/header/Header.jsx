@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import './Header.css'
 import { FaBars } from 'react-icons/fa6'
 import { HiMiniXMark } from 'react-icons/hi2'
+import { Link } from 'react-router-dom'
+
 
 function Header() {
 
@@ -18,11 +20,12 @@ function Header() {
           <div className="barses_item">
             <HiMiniXMark onClick={() => setOpenSidebar(false)} className='HiMiniXMark' />
             <div className="bars_item_box">
-              <h3>Page 1</h3>
-              <h3>Page 2</h3>
-              <h3>Page 3</h3>
-              <h3>Page 4</h3>
-              <h3>Page 5</h3>
+              <h3><Link to={"/"}>Home</Link></h3>
+              <h3><Link to={"/page1"}>Page 1</Link></h3>
+              <h3><Link to={"/page2"}>Page 2</Link></h3>
+              <h3><Link to={"/page3"}>Page 3</Link></h3>
+              <h3><Link to={"/page4"}>Page 4</Link></h3>
+              <h3><Link to={"/page5"}>Page 5</Link></h3>
 
             </div>
           </div>
